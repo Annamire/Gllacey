@@ -1,0 +1,162 @@
+.slider {
+    min-height: 450px;
+    padding-top: 245px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 680px;
+    margin: 0 auto 27px;
+    position: relative;
+    z-index: 3;
+}
+
+.slide__btn {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    padding: 9px 23px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.slide__image {
+    /* width: 375px;
+    height: 585px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.slide__image--left {
+    width: 372px;
+    height: 585px;
+    left: 25%;
+    z-index: 2;
+}
+
+.slide__image--right {
+    width: 333px;
+    height: 523px;
+    right: 20%;
+    z-index: 1;
+}
+
+/* .slide__image--second-left {
+    background: url(../images/slide-2-left.png) no-repeat center;
+    width: 375px;
+    height: 582px;
+    left: 0;
+    top: 0;
+}
+
+.slide__image--second-right {
+    background: url(../images/slide-2-right.png) no-repeat center;
+    width: 338px;
+    height: 523px;
+    right: 0;
+    top: 0;
+}
+
+.slide__image--third-left {
+    background: url(../images/slide-3-left.png) no-repeat center;
+    width: 367px;
+    height: 582px;
+    left: 0;
+    top: 0;    
+}
+
+.slide__image--third-right {
+    background: url(../images/slide-3-right.png) no-repeat center;
+    width: 326px;
+    height: 523px;
+    right: 0;
+    top: 0;
+} */
+
+.slider-controls {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    z-index: 5;
+    display: flex;
+}
+
+.slider-controls label {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: block;
+    background-color: transparent;
+}
+
+.slider-controls label:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.slider-controls label:focus {
+    background-color: #FFFFFF;
+}
+
+#slide-1:checked ~ .wrap main .container .slider .slider-controls label[for=slide-1], 
+#slide-2:checked ~ .wrap main .container .slider .slider-controls label[for=slide-2], 
+#slide-3:checked ~ .wrap main .container .slider .slider-controls label[for=slide-3] {
+    background-color: #fff;
+}
+
+#slide-1:checked ~ .wrap main .container .slider .slide-1, 
+#slide-2:checked ~ .wrap main .container .slider .slide-2, 
+#slide-3:checked ~ .wrap main .container .slider .slide-3 {
+    display: block;
+}
+
+#slide-1:checked ~ .wrap {
+    background-color:#849D8F;
+}
+
+#slide-2:checked ~ .wrap {
+    background-color:#8996A6;
+}
+
+#slide-3:checked ~ .wrap {
+    background-color:#9D8B84;
+}
+
+.slide__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(125px);
+    width: 716px;
+    height: 716px;
+}
+
+.slide__bg--1 {
+    background: rgba(239, 224, 218, 0.75);
+}
+
+.slide__bg--2 {
+    background: rgba(218, 228, 239, 0.75);
+}
+
+.slide__bg--3 {
+    background: rgba(239, 224, 218, 0.75);
+}

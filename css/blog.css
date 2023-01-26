@@ -1,0 +1,97 @@
+.blog {
+    padding: 20px 0;
+}
+
+.blog__wrap {
+    display: flex;
+    /* margin: 0 -13px; */
+    gap: 0 13px;
+}
+
+.blog__box {
+    border-radius: 16px;
+    width: 50%;
+    /* margin: 0 13px; */
+    padding: 23px 20px;
+    flex: 1 1 calc(100% / 2) - 26px;
+}
+
+.blog__box--bg {
+    background: url(../images/blog_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.blog__title {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-text-color);
+    padding-bottom: 16px;
+}
+
+.blog__wrap-link {
+    max-width: 287px;
+}
+
+.blog__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--main-text-color);
+    border-bottom: 2px solid #353535;
+}
+
+.blog__link:hover,
+.blog__link:active {
+    color: #E84D37;
+    border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+}
+
+.blog__box--subscription {
+    background: #F8F7F4;
+    border: 5px solid;
+    border-image: url(../images/Postal__bg_border.svg) 6;
+}
+
+.blog__text {
+    line-height: 22px;
+}
+
+.blog__feedback {
+    padding-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__feedback button {
+    padding: 14px 19px;
+}
+
+#emailSubscription {
+    width: 368px;
+    background: #FFF;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+#emailSubscription:hover {
+    outline: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+#emailSubscription:focus {
+    outline: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+#emailSubscription::placeholder {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ПОЛЕ С ВВЕДЕННЫМИ ДАННЫМИ
+#emailSubscription::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-text-color);
+} */

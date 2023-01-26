@@ -1,0 +1,24 @@
+.breadcrumbs {
+    padding-bottom: 13px;
+    margin-top: -50px;
+}
+
+.breadcrumbus__list {
+    display: flex;
+}
+
+.breadcrumbus__item-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.breadcrumbus__item-link:hover {
+    color: #FFBC9E;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.breadcrumbus__item-arrow {
+    padding: 0 8px;
+}

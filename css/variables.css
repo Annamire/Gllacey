@@ -1,0 +1,5 @@
+:root {
+    --main-text-color: #323232;
+    --hover-color-link: #FFBC9E;
+    --hover-border-link: 1px solid rgba(255, 188, 158, 0.3);
+}

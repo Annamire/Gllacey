@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+}
+
+ul,
+ol  {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4 {
+    margin: 0rem;
+}
+
+p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrap {
+    background-color:#849D8F;
+}
+
+.container {
+    width: 100%;
+    padding: 0 27px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title--link {
+    color: #FFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title--link:hover,
+.title--link:active {
+    color: var(--hover-color-link);
+    border-bottom: var(--hover-border-link);
+}
+
+.btn {
+    color: #FFF;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: 0px 1px 2px #AC1000;
+}
+
+.btn:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: inset 0px 2px 2px #942718;
+}
+
+.btn-big {
+    background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+    border-radius: 70px;
+    font-size: 18px;
+    line-height: 24px;
+    text-shadow: 0px 2px 5px rgb(160 32 11 / 0.76);
+}
+
+.btn-small {
+    background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
+    border-radius: 26px;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.btn-quick-view {
+    background: linear-gradient(180deg, #F26843 0%, #E84D37 100%);
+    box-shadow: 0px 1px 2px #AC1000;
+    border-radius: 50px;
+}
+/* secondary */
+
+.input {
+    padding: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-text-color);
+}
+
+.input::placeholder {
+    color: #999999;
+    font-weight: 400;
+}

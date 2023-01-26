@@ -1,0 +1,50 @@
+.features {
+    padding: 20px 0;
+    margin-top: -40px;
+}
+
+.features__wrap {
+    background: url(../images/wafer_bg.png) no-repeat center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 24px 23px 36px 20px;
+}
+
+.features__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--main-text-color);
+    padding-bottom: 7px;
+}
+
+.feature__list {
+    display: grid;
+    gap: 19px 26px;
+    grid-template-columns:  repeat(2, 1fr);
+}
+
+.feature__item {
+    display: flex;
+    column-gap: 6px;
+}
+
+.feature__item svg {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    border: 2px solid var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.feature__text {
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 22px;
+    color: var(--main-text-color);  
+    display: flex;
+}

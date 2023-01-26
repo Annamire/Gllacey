@@ -1,0 +1,71 @@
+footer {
+    padding: 18px 0 26px;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.social__list{
+    display: flex;
+}
+
+.social__item {
+    margin-right: 12px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__item--link:hover svg *{
+    fill-opacity: 1;
+    transition: .7s;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+}
+
+.footer__tetle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer__item {
+    padding-left: 22px;
+}
+
+.footer__item--active {
+    position: relative;
+}
+
+.footer__item--active::before {
+    content: url(../images/heart.svg);
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.footer__logo {
+    width: 108px;
+}
+
+.footer__inner--copyright {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__inner--copyright span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+

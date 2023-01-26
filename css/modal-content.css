@@ -1,0 +1,83 @@
+.wrap {
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 11;
+}
+
+.modal-active .overlay {
+    display: flex;
+}
+
+.modal-active {
+    overflow-y: hidden;
+}
+
+.modal {
+    width: 477px;
+    background: #F8F7F4;
+    border-radius: 6px;
+    padding: 20px 25px 27px 24px;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.modal__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--main-text-color);
+    margin-bottom: 26px;
+}
+
+.modal__form .input {
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 4px;
+    outline: none;
+}
+
+.modal__form .input:hover {
+    outline: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+.modal__form .input:focus {
+    outline: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal__user-name,
+.modal__email {
+    width: 267px;
+}
+
+.modal__textarea {
+    resize: none;
+    height: 154px;
+}
+
+.modal__btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__btn {
+    padding: 14px 24px;
+}

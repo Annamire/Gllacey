@@ -1,0 +1,49 @@
+.prime {
+    display: flex;
+    padding: 40px 0;
+    margin: 0 -13px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 6;
+}
+
+.prime__box {
+    border-radius: 16px;
+    width: 50%;
+    background-size: cover; 
+    background: url(../images/raspberry_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 16px 22px 22px 16px;
+    margin: 0 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.prime__box--right {
+    background: url(../images/chocolate_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.prime__title,
+.prime__text {
+    color: #FFF;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.prime__title {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.prime__text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prime__btn {
+    padding: 15px 22px;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
